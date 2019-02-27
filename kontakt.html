@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <title>Kontakt</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <link href="css/map.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato"/>
+</head>
+
+  <body style="background-color:#ffdd99">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" >
+        <img src="img/ceger-logo.png" width="100" height="35" alt="">
+      </a>
+    
+    </div>
+  </div>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+         <li><a href="prvi.html">Početna</a></li>
+        <li><a href="#">O nama</a></li>
+         <li><a href="galerija.html">Galerija</a></li>
+         <li class="active"><a href="#">Kontakt <span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ <div class="mapa"> 
+<script type="text/javascript"></script>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 44.7968276, lng: 20.4682536};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    </div>
+
+    <br></br>
+    <br></br>
+
+    <div class="info">
+    <h3><strong>Adresa</strong></h3>
+    <h4>Skerlićeva 20, Vračar</h4>
+    <h3><strong>Telefon</strong></h3>
+    <h4>011/4065-794</h4>
+    <h3><strong>E-mail</strong></h3>
+    <h4>info@kafeceger.com</h4>
+    <h3><strong>Radno vreme</strong></h3>
+    <h4>Svakim danom od 7:30h do 00h</h4>
+
+  </div>
+
+    <div class="kontakt" >
+    <div class="wrapper" >
+    <div id="main" style="padding: 0px 0 0 0; color: #20B2AA" >
+    
+
+ 
+    <form id="contact-form" action="/" method="post">
+      <h3>Pošaljite poruku</h3>
+      <div>
+        <label>
+          <span>Ime: (Obavezno)</span>
+          <input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>E-mail: (Obavezno)</span>
+          <input placeholder="Please enter your email address" type="email" tabindex="2" required>
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>Telefon: (Obavezno)</span>
+          <input placeholder="Please enter your number" type="tel" tabindex="3" required>
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>Tema poruke: (Obavezno)</span>
+          <input placeholder="Please enter a message subject" type="text" tabindex="4" required>
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>Poruka: (Obavezno)</span>
+          <textarea placeholder="Include all the details you can" tabindex="5" required></textarea>
+        </label>
+      </div>
+      <div>
+        <button name="submit" type="submit" id="contact-submit">Pošalji E-mail</button>
+      </div>
+    </form>
+    
+    </div>
+  </div>
+  </div>
+
+
+  <br>
+  <br>
+
+
+
+    <script src="js/scripts.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAitTYdIZbR2DC0fcpxGQNtdybuYURRdFM&callback=initMap">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  </body>
+
+
+
+</html>
